@@ -1,5 +1,5 @@
 /**to-do:
- * when finding intersections, if diff starting and ending loc, make denser search area around both those instead of center
+ * when finding intersections, if diff starting and ending loc, make denser search area around both those instead of center 
  */
 var map, recentPin1, recentPin2, recentLine, infobox;
 
