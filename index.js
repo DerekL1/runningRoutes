@@ -254,7 +254,7 @@ findRoute = () => {
         var changeMail = 0;
         console.log(coordList.length);
         for (const tryCoords of coordList) {
-            const fetchReq = fetch(`http://api.geonames.org/findNearestIntersectionJSON?lat=${tryCoords[0]}&lng=${tryCoords[1]}&username=runningroutes${changeMail}`)
+            const fetchReq = fetch(`https://api.geonames.org/findNearestIntersectionJSON?lat=${tryCoords[0]}&lng=${tryCoords[1]}&username=runningroutes${changeMail}`)
             .then(res => res.json());
             tryFetches.push(fetchReq);
             //gets past account limit for api
@@ -604,7 +604,7 @@ findRoute = () => {
             //loads a map of the route; however it only works for smaller routes with fewer waypoints
             // var s = "";
             // var url = "https://dev.virtualearth.net/REST/v1/Imagery/Map/Road/Routes?";
-            // var url2 = "http://dev.virtualearth.net/REST/V1/Routes/Walking?";
+            // var url2 = "https://dev.virtualearth.net/REST/V1/Routes/Walking?";
             // var wp = 0;
             // for (var i = 0; i < bestRoute.length; i++) {
             //     if (wp === 0 || i === bestRoute.length - 1) {
