@@ -254,7 +254,7 @@ findRoute = () => {
         var changeMail = 0;
         console.log(coordList.length);
         for (const tryCoords of coordList) {
-            const fetchReq = fetch(`https://api.geonames.org/findNearestIntersectionJSON?lat=${tryCoords[0]}&lng=${tryCoords[1]}&username=runningroutes${changeMail}`)
+            const fetchReq = fetch(`http://api.geonames.org/findNearestIntersectionJSON?lat=${tryCoords[0]}&lng=${tryCoords[1]}&username=runningroutes${changeMail}`)
             .then(res => res.json());
             tryFetches.push(fetchReq);
             //gets past account limit for api
